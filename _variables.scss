@@ -1,0 +1,21 @@
+$pale-violet: hsl(276, 100%, 81%);
+$moderate-violet: hsl(276, 55%, 52%);
+$dark-violet: hsl(271, 15%, 43%);
+$gray-blue: hsl(206, 6%, 79%);
+$very-dark-violet: hsl(271, 36%, 24%);
+$dark-gray-violet: hsl(270, 7%, 64%);
+
+$magenta-gradient: linear-gradient(
+    to left,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+);
+$violet-gradient: linear-gradient(
+    to left,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+);
+
+$white: hsl(0, 0%, 100%);
+$light-gray: hsl(270, 20%, 96%);
+$light-magenta: hsl(289, 100%, 72%);
