@@ -1,6 +1,259 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+:root {
+  font-size: 9px;
+}
+
 * {
   box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Rubik;
+  background: #f5f3f7;
+  font-size: 8px;
+  height: 100%;
+}
+
+.phone {
+  background: #f5f3f7;
+  width: 250px;
+  height: 510px;
+  margin: 4rem auto;
+  border: 1.5rem solid #fff;
+  border-radius: 35px;
+  overflow: hidden;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to left, #e942ff, #8838ff);
+  padding: 3.5rem 2rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.head img {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 0 1rem;
+}
+
+.info:before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: 20%;
+  right: 20%;
+  height: 3.5rem;
+  border-radius: 15px;
+  background: white;
+}
+
+.name {
+  margin: 0;
+  color: #f5f3f7;
+}
+
+.available {
+  margin: 0;
+  color: #d89eff;
+}
+
+.left-arrow-up {
+  background: #f5f3f7;
+  width: 2px;
+  height: 0.7rem;
+  border: none;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  transform: rotate(30deg) translatey(1px);
+}
+
+.left-arrow-down {
+  background: #f5f3f7;
+  width: 2px;
+  height: 0.7rem;
+  border: none;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  transform: rotate(-30deg) translatey(-1px);
+}
+
+.three-dots {
+  width: 2px;
+  height: 2px;
+  background: #f5f3f7;
+  position: relative;
+  margin-left: auto;
+  border: none;
+}
+.three-dots:before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: #f5f3f7;
+  position: absolute;
+  top: -3px;
+}
+.three-dots:after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: #f5f3f7;
+  position: absolute;
+  top: 3px;
+}
+
+.body {
+  background: #f5f3f7;
+  padding: 11px 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.msg-1,
+.msg-2,
+.msg-5 {
+  background: rgba(146, 65, 200, 0.1);
+  color: #9241c8;
+  width: 60%;
+  padding: 0.8rem;
+  border-radius: 10px;
+  margin-top: 0;
+}
+
+.dog-images {
+  display: flex;
+  margin-left: auto;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+.dog-images img {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  margin-left: 1rem;
+}
+
+.msg-3,
+.msg-4 {
+  background: white;
+  color: #6e5d7e;
+  width: 60%;
+  margin-left: auto;
+  padding: 0.8rem;
+  border-radius: 10px;
+  margin-top: 0;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.msg-4 {
+  width: auto;
+  margin-bottom: 18px;
+}
+
+.option-1,
+.option-2 {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to left, #8838ff, #e942ff);
+  padding: 9px 15px 9px 9px;
+  width: 160px;
+  margin-bottom: 8px;
+}
+.option-1 p,
+.option-2 p {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 8px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid rgba(216, 158, 255, 0.4);
+}
+
+.price {
+  margin-left: auto !important;
+  font-weight: bold;
+  font-size: 12px;
+  color: white !important;
+}
+
+.msg-window {
+  background: white;
+  display: flex;
+  padding: 5px;
+  border-radius: 25px;
+  margin-top: 6px;
+}
+.msg-window p {
+  color: #c6cacd;
+  font-size: 9px;
+  margin: auto 0 5px 18px;
+}
+
+.circle-arrow {
+  background: #3e2753;
+  border-radius: 50%;
+  margin-left: auto;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+section {
+  text-align: center;
+}
+section h1 {
+  color: #3e2753;
+  font-size: 40px;
+  font-weight: 500;
+}
+section p {
+  color: #a39daa;
+  font-size: 16px;
+  margin-right: 25px;
+  margin-left: 25px;
+  line-height: 28px;
+}
+
+@media screen and (min-width: 850px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .phone {
+    margin: 0 150px 0 0;
+  }
+
+  section {
+    max-width: 500px;
+    text-align: left;
+  }
+  section p {
+    margin-left: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
